@@ -10,7 +10,8 @@
 			<p class="main-header-logo">Техномарт</p>
 			<ul>
 				<li class="search">
-					<input type="text" name="search" value="Поиск:"> 
+					<label class="visually-hidden" for="search">Поиск</label>
+					<input type="text" id="search" name="search" value="Поиск:"> 
 				</li>
 				<li>
 					<a href="marker.html" class="button-marker">Закладки:0</a>
@@ -33,8 +34,8 @@
 				<p class="number">+7(812) 555-05-55</p>
 				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 			</div>
-			<a class="button button-entry">Войти</a>
-			<a class="button button-registration">Регистрация</a>
+			<a href="login.html" class="button button-entry">Войти</a>
+			<a href="registration.html" class="button button-registration">Регистрация</a>
 		</div>
 		<nav class="main-navigation">	
 			<ul class="site-navigation">
@@ -83,13 +84,13 @@
 			</p>
 			<ul class="service-selection">
 				<li>
-					<a class="button-delivery">Доставка</a>
+					<button class="button-delivery" type="button">Доставка</button>
 				</li>
 				<li>
-					<a class="button-guarantee">Гарантия</a>
+					<button class="button-guarantee" type="button">Гарантия</button>
 				</li>
 				<li>
-					<a class="button-credit">Кредит</a>
+					<button class="button-credit" type="button">Кредит</button>
 				</li>
 			</ul>
 			<section class="delivery">
@@ -127,10 +128,10 @@
 					Вы можете забрать товар сами, 
 					заехав в наш офис:
 				</p>
-				<a class="map">
-					<img src="img/map.jpg" width="300" height="158" alt="Адрес на карте" />
-				</a>
-				<a class="button-contacts">Заблудились? Напишите нам!</a>
+				<p class="map">
+					<img src="img/map.jpg" width="300" height="158" alt="Изображение карты с адресом Техномарта: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" />
+				</p>
+				<button type="button" class="button-contacts">Заблудились? Напишите нам!</button>
 			</section>
 		</section>
 	</main>
@@ -182,16 +183,15 @@
 			</p>
 			<ul class="footer-social">
 				<li>
-					<a class="social-button" href="#">Вконтакте</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта во вконтакте">Вконтакте</a>
 				</li>
 				<li>
-					<a class="social-button" href="#">Фейсбук</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта на фейсбуке">Фейсбук</a>
 				</li>
 				<li>
-					<a class="social-button" href="#">Инстаграм</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта в инстаграме">Инстаграм</a>
 				</li>
 			</ul>
-			</div>
 			<p class="feedback">
 				Обратная связь:
 				mail@htmlacademy.ru
@@ -202,5 +202,29 @@
 			</p>
 		</div>
 	</footer>
+	
+	<section class="modal modal-map-big">
+		<img src="img/map-big.jpg" width="300" height="158" alt="Изображение карты с адресом Техномарта: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" />
+	</section>
+		
+	<section class="modal modal-write-us">
+		<h2 class="visually-hidden">Напишите нам</h2>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="name-user">Ваше имя:</label>
+				<input class="name-user" id="name-user" type="text" name="name-user" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="e-mail-user">Ваш e-mail:</label>
+				<input class="e-mail-user" id="e-mail-user" type="e-mail" name="e-mail-user" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="text-letter">Текст письма:</label>
+				<textarea class="text-letter" id="text-letter" 	name="text-letter" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close">Закрыть</button>
+    </section>
   </body>
 </html>
