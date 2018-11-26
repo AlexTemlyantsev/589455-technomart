@@ -34,7 +34,7 @@
 			</div>
 			<div class="user-info">
 				<p>
-					<a class="button-exit-user">Равшан Джамшутович</a>
+					<button type="button" class="button-exit-user">Равшан Джамшутович</button>
 				</p>
 				<ul>
 					<li>
@@ -75,7 +75,7 @@
 	<main class="container">
 		<ul class="breadcrumbs">
 			<li>
-				<a href="index.html" class="main_icon"></a>
+				<a href="index.html" class="main_icon" aria-label="Перейти на главную страницу"></a>
 			</li>
 			<li>
 				<a href="catalog.html">Каталог</a>
@@ -90,7 +90,58 @@
 		<h1>Перфораторы</h1>
 		<section class="filters">
 			<h2>Фильтр:</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Цена</legend>
+					<!-- Здесь будет ранг по цене -->
+				</fieldset>
+				<fieldset>
+					<legend>Производители:</legend>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+						name="bosch" checked id="filter-bosch">
+						<label for="filter-bosch">Bosch</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+						name="interscol" id="filter-interscol">
+						<label for="filter-interscol">Интерскол</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+						name="makita" checked id="filter-makita">
+						<label for="filter-makita">Makita</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+						name="dewalt" id="filter-dewalt">
+						<label for="filter-dewalt">Dewalt</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+						name="hitachi" id="filter-hitachi">
+						<label for="filter-hitachi">Hitachi</label>
+					</li>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" 
+							name="power-supply" value="battery" id="filter-battery">
+							<label for="filter-battery">Аккумуляторные</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" 
+							name="power-supply" value="network" checked id="filter-network">
+							<label for="filter-network">Сетевые</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button button">
+					Показать
+				</button>
+			</form>
 		</section>
 		<section class="sorting">
 			<h2>Сортировка:</h2>
@@ -330,13 +381,13 @@
 			</p>
 			<ul class="footer-social">
 				<li>
-					<a class="social-button" href="#">Вконтакте</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта во вконтакте">Вконтакте</a>
 				</li>
 				<li>
-					<a class="social-button" href="#">Фейсбук</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта на фейсбуке">Фейсбук</a>
 				</li>
 				<li>
-					<a class="social-button" href="#">Инстаграм</a>
+					<a class="social-button" href="#" aria-label="Страница группы Техномарта в инстаграме">Инстаграм</a>
 				</li>
 			</ul>
 			<p class="feedback">
@@ -349,5 +400,13 @@
 			</p>
 		</div>
 	</footer>
+	
+	<section class="modal modal-add-product">
+		<h2>Товар добавлен в корзину</h2>
+		<form class="add-product" action="https://echo.htmlacademy.ru" method="post">
+			<input class="button button-add-product" type="submit">Оформить заказ</button>
+		</form>
+		<button class="modal-close">Продолжить покупки</button>
+    </section>
   </body>
 </html> 
