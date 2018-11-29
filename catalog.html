@@ -6,7 +6,7 @@
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
 	<header class="main-header">
 		<div class="top-menu">
 			<a href="index.html" class="main-header-logo">Техномарт</a>
@@ -25,55 +25,57 @@
 				</li>
 			</ul>
 		</div>
-		<div class="header-row">
-			<h2 class="designation">
-				Интернет-магазин
-				строительных материалов
-				и инструментов для ремонта
-			</h2>
-			<div class="contacts">
-				<p class="number">+7(812) 555-05-55</p>
-				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+		<div class="header-column">
+			<div class="header-row">
+				<h2 class="designation">
+					Интернет-магазин
+					строительных материалов
+					и инструментов для ремонта
+				</h2>
+				<div class="contacts">
+					<p class="number">+7(812) 555-05-55</p>
+					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
+				<div class="user-info">
+					<p class="button-exit">
+						<a href="#">Равшан Джамшутович</a>
+					</p>
+					<ul class="personal">
+						<li>
+							<a href="basket.html">Мои заказы</a>
+						</li>
+						<li>
+							<a href="user.html">Личный кабинет</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="user-info">
-				<p>
-					<a href="#" class="button-exit">Равшан Джамшутович</a>
-				</p>
-				<ul>
+			<nav class="main-navigation">
+				<ul class="site-navigation">
 					<li>
-						<a href="basket.html">Мои заказы</a>
+						<a href="index.html">Главная</a>
 					</li>
 					<li>
-						<a href="user.html">Личный кабинет</a>
+						<a href="kompany.html">Компания</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="news.html">Новости</a>
+					</li>
+					<li>
+						<a href="special_offers.html">Спецпредложения</a>
+					</li>
+					<li>
+						<a href="delivery.html">Доставка</a>
+					</li>
+					<li>
+						<a href="contacts.html">Контакты</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</div>
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li>
-					<a href="index.html">Главная</a>
-				</li>
-				<li>
-					<a href="kompany.html">Компания</a>
-				</li>
-				<li>
-					<a href="#">Каталог</a>
-				</li>
-				<li>
-					<a href="news.html">Новости</a>
-				</li>
-				<li>
-					<a href="special_offers.html">Спецпредложения</a>
-				</li>
-				<li>
-					<a href="delivery.html">Доставка</a>
-				</li>
-				<li>
-					<a href="contacts.html">Контакты</a>
-				</li>
-			</ul>
-		</nav>
 	</header>
 	<main class="container">
 		<ul class="breadcrumbs">
@@ -100,31 +102,33 @@
 				</fieldset>
 				<fieldset>
 					<legend>Производители:</legend>
-					<li class="filter-option">
-						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
-						name="bosch" checked id="filter-bosch">
-						<label for="filter-bosch">Bosch</label>
-					</li>
-					<li class="filter-option">
-						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
-						name="interscol" id="filter-interscol">
-						<label for="filter-interscol">Интерскол</label>
-					</li>
-					<li class="filter-option">
-						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
-						name="makita" checked id="filter-makita">
-						<label for="filter-makita">Makita</label>
-					</li>
-					<li class="filter-option">
-						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
-						name="dewalt" id="filter-dewalt">
-						<label for="filter-dewalt">Dewalt</label>
-					</li>
-					<li class="filter-option">
-						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
-						name="hitachi" id="filter-hitachi">
-						<label for="filter-hitachi">Hitachi</label>
-					</li>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+							name="bosch" checked id="filter-bosch">
+							<label for="filter-bosch">Bosch</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+							name="interscol" id="filter-interscol">
+							<label for="filter-interscol">Интерскол</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+							name="makita" checked id="filter-makita">
+							<label for="filter-makita">Makita</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+							name="dewalt" id="filter-dewalt">
+							<label for="filter-dewalt">Dewalt</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+							name="hitachi" id="filter-hitachi">
+							<label for="filter-hitachi">Hitachi</label>
+						</li>
+					</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Питание:</legend>
@@ -334,8 +338,8 @@
 		<div class="top-footer">
 			<p class="main-header-logo">Техномарт</p>
 			<section class="contacts">
-				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p class="number">+7(812) 555-05-55</p>
+				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>+7(812) 555-05-55</p>
 			</section>
 			<div class="footer-navigation">
 				<ul class="site-navigation">
@@ -389,7 +393,7 @@
 			</ul>
 			<p class="feedback">
 				Обратная связь:
-				mail@htmlacademy.ru
+				<a href="#">mail@htmlacademy.ru</a>
 			</p>
 			<p class="feedback">
 				Разработано — 
