@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: "Cuprum", Arial, sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 			
 	background-color: #ffffff;
 }
@@ -18,7 +18,6 @@ a {
 	font: inherit;
 	text-align: center;
 	color: #ffffff;
-	vertical-align: middle;
 		  
 	border: none;
 }
@@ -64,7 +63,7 @@ a {
 	background-color: #ba2732; 
 }
 
-.search input[value] {
+.search input {
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
@@ -73,11 +72,16 @@ a {
 	border: none;
 }
 
-.search input[value]:focus {
-	color: #000;
+.search input:focus {
+	color: #000000;
 	
 	background-color: #fff;
 }
+
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
 
 .button-marker:active,
 .basket:active {
@@ -110,7 +114,7 @@ a {
 	background-color: #f3f7f9; 
 }
 
-.designation {
+.header-caption {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
@@ -130,7 +134,7 @@ a {
 }
 
 .header-row a {
-	color: #000;
+	color: #000000;
 	
 	background-color: #fff;
 }
@@ -144,6 +148,7 @@ a {
 	color: #000000;
 	opacity: 0.3;
 }
+
 .main-navigation {
 	background-color: #32425c;
 }
@@ -239,7 +244,7 @@ a {
 .service-selection button {
 	font-size: 21px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	color: #ffffff;
 	background-color: #32425c;
 }
@@ -263,31 +268,35 @@ a {
 
 /* main Каталог */
 
-.inner-page .container {
-	font-family: 'PT Sans', Arial, sans-serif;
+.container {
 	color: #000000;
 }
 
 .breadcrumbs a {
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 }
 
 .breadcrumbs-current {
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 }
 
 .container h1 {
-	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
 	
 	background-color: #f2f6f8;
+}
+
+.filter {
+	font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .filter h2 {
@@ -297,7 +306,7 @@ a {
 
 .filter legend {
 	font-size: 17px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 30px;
 }
 
@@ -315,10 +324,14 @@ a {
 	background-color: #ffffff;
 }
 
+.catalog {
+	font-family: 'PT Sans', Arial, sans-serif;
+}
+
 .catalog-item {
 	font-size: 17px;
 	line-height: 18px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .catalog-category {
@@ -349,7 +362,7 @@ a {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: normal;
+	font-weight: 400;
 	text-transform: uppercase;
 	
 }
@@ -456,10 +469,8 @@ a {
 	text-decoration: none;
 }
 
-
 /* поппер попросили поставить display: none; */
 
 .modal  {
 	display: none;
 }
-
