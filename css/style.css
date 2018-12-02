@@ -1,9 +1,12 @@
 body {
-	margin: 0;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: 400;
 			
 	background-color: #ffffff;
+	
+	width: 1200px;
+	margin: 0 auto;
 }
 
 ul {
@@ -38,6 +41,16 @@ a {
 	color: #ffffff;
 	
 	background-color: #293449;
+	
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 130px;
+}
+
+.top-menu ul {
+	margin: 0;
+	padding: 0;
 }
 
 .top-menu:hover,
@@ -50,8 +63,10 @@ a {
 	line-height: 24px;
 	text-transform: uppercase;
 	
+	margin: 0;
+	padding: 0;
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 #b52933;
+	box-shadow: 0 5px 0 #b52933;	
 }
 
 .main-header-logo:hover, 
@@ -112,25 +127,14 @@ a {
 	line-height: 21px;
 	
 	background-color: #f3f7f9; 
+	
+	margin: 0;
+	padding: 46px 130px 65px 130px;
 }
-
-.header-caption {
-	font-size: 16px;
-	font-style: italic;
-	line-height: 23px;
-	color: #ee3643;	
-}
-
-.number {
-	font-size: 21px;
-	line-height: 21px;
-	color: #ee3643;	
-}
-
-.address {
-	font-size: 14px;
-	line-height: 24px;
-	color: #32425c;
+.header-row {
+	display: flex;
+	justify-content: space-between; 
+	margin-bottom: 30px;
 }
 
 .header-row a {
@@ -149,8 +153,64 @@ a {
 	opacity: 0.3;
 }
 
+.header-caption {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+	color: #ee3643;	
+	
+	width: 200px;
+	margin: 0;
+	margin-left: 53px;
+}
+.contacts {
+	margin-left: 70px;
+}
+
+.number {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;	
+	
+	width: 264px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	border: 3px solid #ffffff;
+}
+
+.address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.button-entry {
+	width: 121px;
+	margin: 0;
+	padding:0;
+	margin-left: 68px;
+}
+
+.button-registration {
+	width: 150px;
+	margin: 0;
+	padding:0;
+	margin-left: 10px;
+}
+
+
 .main-navigation {
 	background-color: #32425c;
+	box-shadow: 0 5px 0 #293449;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation a,
@@ -172,7 +232,7 @@ a {
 	background-color: #1d2739;
 }
 
-.inner-page .basket {
+.basket-red {
 	background-color: #ee3643;
 	
 	display: inline-block;
