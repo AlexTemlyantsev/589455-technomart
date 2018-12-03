@@ -106,6 +106,13 @@ a {
 	background-color: #161d29;
 }
 
+.basket-red {
+	background-color: #ee3643;
+	
+	display: inline-block;
+}
+
+
 .order {
 	background-color: #63a63e;
 }
@@ -164,11 +171,14 @@ a {
 	margin: 0;
 	margin-left: 53px;
 }
-.contacts {
+
+.header-row .contacts {
+	margin: 0;
+	padding: 0;
 	margin-left: 70px;
 }
 
-.number {
+.header-row .number {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;	
@@ -180,13 +190,14 @@ a {
 	border: 3px solid #ffffff;
 }
 
-.address {
+.header-row .address {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
 	
 	margin: 0;
 	padding: 0;
+	width: 255px;
 }
 
 .button-entry {
@@ -203,6 +214,69 @@ a {
 	margin-left: 10px;
 }
 
+.user-info {
+	margin: 0;
+	padding: 0;
+	margin-left: 50px;
+}
+
+
+.button-exit {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.button-exit a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	
+	background-color: #ffffff;
+	
+	width: 300px;
+	display: inline-block;
+}
+
+.button-exit a:hover,
+.button-exit a:focus {
+	color: #000000;
+}
+
+.button-exit a:active {
+	opacity: 0.3;
+}
+
+.personal {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.personal li {
+	margin: 0;
+	padding: 0;
+}
+
+.personal a {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+	
+	margin-left: 18px;
+	background-color: transparent;
+}
+
+.personal a:hover,
+.personal a:focus {
+	color: #ee3643;
+}
+
+.personal a:active {
+	color: #32425c;
+	opacity: 0.3;
+}
 
 .main-navigation {
 	background-color: #32425c;
@@ -231,46 +305,6 @@ a {
 	opacity: 0.5;
 	
 	background-color: #1d2739;
-}
-
-.basket-red {
-	background-color: #ee3643;
-	
-	display: inline-block;
-}
-
-.button-exit {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
-	
-	background-color: #ffffff;
-}
-
-.button-exit a:hover,
-.button-exit a:focus {
-	color: #000000;
-}
-
-.button-exit a:active {
-	opacity: 0.3;
-}
-
-.personal a {
-	font-size: 16px;
-	line-height: 18px;
-	color: #32425c;
-	text-decoration: underline;
-}
-
-.personal a:hover,
-.personal a:focus {
-	color: #ee3643;
-}
-
-.personal a:active {
-	color: #32425c;
-	opacity: 0.3;
 }
 
 /* main Главная*/
@@ -464,6 +498,12 @@ a {
 
 /* main Каталог */
 
+.breadcrumbs {
+	margin: 0;
+	padding: 0 130px;
+	display: flex;
+}
+
 .breadcrumbs a {
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
@@ -485,45 +525,110 @@ a {
 	text-transform: uppercase;
 	
 	background-color: #f2f6f8;
+	
+	margin: 0;
+	padding: 0 130px;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 130px;
+}
+
+.filters {
+	width: 220px;
 }
 
 .filter {
 	font-family: 'PT Sans', Arial, sans-serif;
+	text-transform: uppercase;
 }
 
-.filter h2 {
+.filter fieldset {
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+  
+	margin: 0;
+	padding: 0;
+}
+
+.filter fieldset:nth-of-type(3) {
+	border: none;
+}
+
+.filters h2 {
 	font-size: 13px;
 	line-height: 18px;
+	
+	margin: 0;
+	padding: 0;
 }
 
 .filter legend {
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
+	
+	margin: 0;
+	padding: 0;
 }
 
 .filter ul {
 	font-size: 15px;
 	line-height: 20px;
-	text-transform: uppercase;
+	
+	margin: 0;
+	padding: 0;
 }
 
 .filter-button {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
+	text-transform: uppercase;
 	
 	background-color: #ffffff;
+	
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e5e5e5;
+	width: 138px;
+	
+}
+
+.sorting h2 {
+	margin: 0;
+	padding: 0;
 }
 
 .catalog {
 	font-family: 'PT Sans', Arial, sans-serif;
+	
+	width: 700px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 52px;
 }
 
 .catalog-item {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
+	
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .catalog-category {
@@ -593,6 +698,9 @@ a {
 
 .info {
 	background-color: #f2f6f8;
+	
+	margin: 0;
+	padding: 67px 130px 68px 130px;
 }
 
 .info h2 {
@@ -600,12 +708,19 @@ a {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
+	
+	margin: 0;
+	padding: 0;
 }
 
 .info p {
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
+	
+	margin: 0;
+	padding: 0;
+	margin-top: 34px;
 }
 
 /* footer */
