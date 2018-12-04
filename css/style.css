@@ -385,7 +385,7 @@ a {
 
 .service p,
 .company p {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -526,14 +526,14 @@ a {
 }
 
 .breadcrumbs a {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 }
 
 .breadcrumbs-current {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -565,7 +565,7 @@ a {
 }
 
 .filter {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -627,7 +627,7 @@ a {
 }
 
 .catalog {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans', Arial, sans-serif;
 	
 	width: 700px;
 }
