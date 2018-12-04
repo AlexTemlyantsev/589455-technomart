@@ -5,7 +5,6 @@ body {
 			
 	background-color: #ffffff;
 	
-	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -36,16 +35,18 @@ a {
 	color: #ffffff;
 }
 
+.top-menu-wrapper {
+	width: 100%;
+	
+	background-color: #293449;
+}
+
 .top-menu {
 	line-height: 18px;
 	color: #ffffff;
-	
-	background-color: #293449;
-	
+
 	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0 130px;
+	justify-content: space-between;	
 }
 
 .top-menu ul {
@@ -133,14 +134,18 @@ a {
 	background-color: #518534;
 }
 
+.header-column-wrapper {
+	width: 100%;
+	
+	background-color: #f3f7f9; 
+}
+
 .header-column {
 	font-size: 21px;
 	line-height: 21px;
 	
-	background-color: #f3f7f9; 
-	
 	margin: 0;
-	padding: 46px 130px 65px 130px;
+	padding: 46px 0 65px 0;
 }
 
 .header-row {
@@ -316,29 +321,37 @@ a {
 /* main Главная*/
 
 .container {
-	color: #000000;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .category {
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 }
 
 .products {
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 }
 
 .manufacturers {
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
+}
+
+.service-wraper {
+	width: 100%;
+	
+	background-color: #f4f8f9;
 }
 
 .service {
-	background-color: #f4f8f9;
+	color: #000000;
 	
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 }
 
 .service-column {
@@ -438,10 +451,12 @@ a {
 }
 
 .company {
+	color: #000000;
+	
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 67px 130px 86px 130px;
+	padding: 67px 0 86px 0;
 }
 
 .company-technomart h2 {
@@ -506,7 +521,7 @@ a {
 
 .breadcrumbs {
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 	display: flex;
 }
 
@@ -524,7 +539,7 @@ a {
 	color: #000000;
 }
 
-.container h1 {
+.catalog-caption {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
@@ -532,15 +547,17 @@ a {
 	
 	background-color: #f2f6f8;
 	
-	margin: 0 130px;
+	margin: 0;
 	padding: 0;
 }
 
 .catalog-columns {
+	color: #000000;
+	
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 }
 
 .filters {
@@ -718,11 +735,15 @@ a {
 	opacity: 0.3;
 }
 
-.info {
-	background-color: #f2f6f8;
+.info-wrapper {
+	width: 100%;
 	
+	background-color: #f2f6f8;
+}
+
+.info {
 	margin: 0;
-	padding: 67px 130px 68px 130px;
+	padding: 67px 0 68px 0;
 }
 
 .info h2 {
@@ -751,13 +772,19 @@ a {
 	padding: 0;
 }
 
-.top-footer {
+.top-footer-wraper {
+	width: 100%;
+	
 	background-color: #32425c;
+}
+
+.top-footer {
+	
 	
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 	padding-bottom: 40px;
 }
 
@@ -805,17 +832,21 @@ a {
 	text-decoration: none;
 }
 
+.bottom-footer-wraper {
+	width: 100%;
+	
+	background-color: #293449;
+}
+
 .bottom-footer {
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 	
-	background-color: #293449;
-	
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 0 130px;
+	padding: 0;
 }
 
 .copyright {
