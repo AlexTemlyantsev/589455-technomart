@@ -84,7 +84,11 @@ a {
 	line-height: 17px;
 	
 	background-color: #293449;
+	
+	margin: 0;
+	padding: 0;
 	border: none;
+	width: 270px;
 }
 
 .search input:focus {
@@ -147,8 +151,6 @@ a {
 
 .header-row a {
 	color: #000000;
-	
-	background-color: #ffffff;
 }
 
 .header-row a:hover,
@@ -205,6 +207,8 @@ a {
 	margin: 0;
 	padding:0;
 	margin-left: 68px;
+	
+	background-color: #ffffff;
 }
 
 .button-registration {
@@ -212,6 +216,8 @@ a {
 	margin: 0;
 	padding:0;
 	margin-left: 10px;
+	
+	background-color: #ffffff;
 }
 
 .user-info {
@@ -366,7 +372,7 @@ a {
 
 .service p,
 .company p {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'PT Sans';
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -505,14 +511,14 @@ a {
 }
 
 .breadcrumbs a {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'PT Sans';
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 }
 
 .breadcrumbs-current {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'PT Sans';
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -526,8 +532,8 @@ a {
 	
 	background-color: #f2f6f8;
 	
-	margin: 0;
-	padding: 0 130px;
+	margin: 0 130px;
+	padding: 0;
 }
 
 .catalog-columns {
@@ -542,7 +548,7 @@ a {
 }
 
 .filter {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'PT Sans';
 	text-transform: uppercase;
 }
 
@@ -604,7 +610,7 @@ a {
 }
 
 .catalog {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'PT Sans';
 	
 	width: 700px;
 }
@@ -622,10 +628,20 @@ a {
 	line-height: 18px;
 	font-weight: 700;
 	
-	width: 220px;
+	width: 218px;
 	margin-bottom: 20px;
 	margin-right: 20px;
+	border: 1px solid #e5e5e5;
 }
+
+.catalog-item:hover,
+.catalog-item:focus {
+	border: none;
+	width: 220px;
+	box-shadow: 0 0 15px 0 #293449;
+}
+
+
 
 .catalog-item:nth-child(3n) {
 	margin-right: 0;
@@ -668,15 +684,18 @@ a {
 	
 	display: inline-block;
 	background-color: #63a63e;
+	box-shadow: 0 3px 0 #367315
 }
 
 .button-buy:hover, 
 .button-buy:focus {
 	background-color: #5fbb2d;
+	
 }
 
 .button-buy:active {
 	background-color: #518534;
+	box-shadow: 0 0 0 #367315;
 }
 
 .button-add-marker {
@@ -684,12 +703,16 @@ a {
 	
 	display: inline-block;
 	background-color: #ffffff;
+	border: 3px solid #63a63e;
 }
 
 .button-add-marker:hover,
 .button-add-marker:focus {
 	color: #32425c;
+	
+	border: 3px solid #32425c;
 }
+
 
 .button-add-marker:active {
 	opacity: 0.3;
