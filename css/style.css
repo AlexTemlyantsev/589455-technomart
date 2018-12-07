@@ -8,10 +8,6 @@ body {
 	margin: 0 auto;
 }
 
-ul {
-	list-style: none;
-}
-
 a {
 	text-decoration: none;
 }
@@ -52,6 +48,8 @@ a {
 .top-menu ul {
 	margin: 0;
 	padding: 0;
+	
+	list-style: none;
 }
 
 .top-menu:hover,
@@ -262,6 +260,8 @@ a {
 	display: flex;
 	margin: 0;
 	padding: 0;
+	
+	list-style: none;
 }
 
 .personal li {
@@ -297,6 +297,8 @@ a {
 .site-navigation {
 	margin: 0;
 	padding: 0;
+	
+	list-style: none;
 }
 
 .site-navigation a,
@@ -401,6 +403,8 @@ a {
 .service-selection {
 	margin: 0;
 	padding: 0;
+	
+	list-style: none;
 }
 
 .service-selection button {
@@ -475,6 +479,7 @@ a {
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
+	list-style: none;
 	
 	margin: 0;
 	padding: 0;
@@ -523,6 +528,8 @@ a {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	
+	list-style: none;
 }
 
 .breadcrumbs a {
@@ -601,6 +608,7 @@ a {
 .filter ul {
 	font-size: 15px;
 	line-height: 20px;
+	list-style: none;
 	
 	margin: 0;
 	padding: 0;
@@ -638,6 +646,8 @@ a {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 52px;
+	
+	list-style: none;
 }
 
 .catalog-item {
@@ -735,6 +745,10 @@ a {
 	opacity: 0.3;
 }
 
+.pagination-list {
+	list-style: none;
+}
+
 .info-wrapper {
 	width: 100%;
 	
@@ -779,8 +793,6 @@ a {
 }
 
 .top-footer {
-	
-	
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
@@ -815,7 +827,8 @@ a {
 .footer-navigation ul {
 	margin: 0;
 	padding: 0;
-	margin-right: 
+	
+	list-style: none;
 }
 
 .products-navigation a {
@@ -860,6 +873,8 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-right: 118px;
+	
+	list-style: none;
 }
 
 .feedback {
