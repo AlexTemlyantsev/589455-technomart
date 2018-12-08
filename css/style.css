@@ -708,6 +708,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 85px 0;
+	position: relative;
 }
 
 .company-technomart h2 {
@@ -1542,8 +1543,194 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 }
 
-/* поппер попросили поставить display: none; */
+/* modal */
 
-.modal  {
+.modal-map-big {
 	display: none;
+	width: 940px;
+	height: 446px;
+	position: absolute; 
+	margin: 0 auto;
+    top: 33px;
+    left: 0;
+    z-index: 30;
+}
+
+.modal-map-big .close::before,
+.modal-write-us .modal-close::before,
+.modal-add-product .modal-close::before {
+	content: "";
+	
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	
+	width: 21px;
+	height: 21px;
+	
+	background-image: url("../img/svg/icon-close.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.modal-map-big:target,
+.modal-write-us:target,
+.modal-add-product:target {
+	display: block;
+}
+
+.modal-write-us {
+	font-size: 18px;
+	line-height: 18px;
+	
+	display: none;
+	position:absolute;
+	top: 210px;
+	left: 160px;
+	
+	box-sizing: border-box;
+	width: 620px;
+	border-top: 7px solid #ff5358;
+	background-color: #ffffff;
+	z-index: 40;
+}
+
+.write-us-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.write-us-column {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 80px;
+	margin-top: 50px;
+	margin-bottom: 21px;
+}
+
+.write-us-column p {
+	margin: 0;
+	padding: 0;
+}
+
+.write-us-form label {
+	display: block;
+	margin-bottom: 13px;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="e-mail"],
+.write-us-form .text-letter {
+	font: font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+}
+
+.write-us-form input:hover,
+.write-us-form input:focus,
+.write-us-form .text-letter:hover,
+.write-us-form .text-letter:focus {
+	border-color: #b5b5b5;
+}
+
+.write-us-form input:active,
+.write-us-form .text-letter:active {
+	border-color: #ee3643;
+}
+
+.write-us-form .free-text {
+	margin: 0 80px;
+	padding: 0;
+}
+
+.text-letter {
+	width: 100%;
+	min-height: 114px;
+	margin-bottom: 37px;
+	padding: 0;
+}
+
+.button-wraper-write-us {
+	background-color: #f4f4f4;
+}
+
+.button-wraper-write-us .button {
+	font-size: 14px;
+	line-height: 18px;
+	
+	margin: 37px 80px;
+	padding: 10px 0;
+	width: 460px;
+}
+
+.modal-add-product {
+	display: none;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-left: -310px;
+	z-index: 50;
+	
+	width: 620px;
+	border-top: 7px solid #ee3643;
+	background-color: #ffffff;
+}
+
+.modal-add-product h2 {
+	margin: 65px 0 65px 80px;
+	padding: 0;
+	padding-left: 95px;
+	position: relative;
+	
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.modal-add-product h2::before {
+	content: "";
+
+	position: absolute;
+	top: -15px;
+	left: 1px;
+	
+	width: 66px;
+	height: 66px;
+	
+	background-image: url("../img/svg/icon-mark.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+ }
+ 
+.order-wrapper {
+	background-color: #f1f1f1;
+}
+
+.modal-add-product .order-column {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 80px;
+}
+
+.order-column .button {
+	display: block;
+	margin: 37px 0;
+	border-radius: 2px;
+	
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.button-add-product {
+	padding: 10px 60px;
+	background-color: #ee3643;
+}
+
+.button-modal-close {
+	color: #000000;
+	padding: 10px 40px;
+	background-color: #ffffff;
 }
