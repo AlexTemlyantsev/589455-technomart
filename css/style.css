@@ -121,7 +121,7 @@ input[type="radio"].visually-hidden {
 	width: 270px;
 	margin: 0;
 	padding: 11px 0;
-	padding-left: 50px;
+	padding-left: 49px;
 	border: none;
 }
 
@@ -210,7 +210,7 @@ input[type="radio"].visually-hidden {
 
 .top-menu .basket {
 	position: relative;
-	padding-left: 45px;
+	padding-left: 47px;
 }
 
 .basket::before {
@@ -294,7 +294,7 @@ input[type="radio"].visually-hidden {
 .header-row {
 	display: flex;
 	justify-content: space-between; 
-	margin-bottom: 30px;
+	margin-bottom: 38px;
 }
 
 .header-caption {
@@ -305,8 +305,8 @@ input[type="radio"].visually-hidden {
 	
 	width: 200px;
 	margin: 0;
-	margin-top: 5px;
-	margin-left: 53px;
+	margin-top: 3px;
+	margin-left: 52px;
 }
 
 .header-row .contacts {
@@ -324,8 +324,8 @@ input[type="radio"].visually-hidden {
 	width: 270px;
 	box-sizing: border-box;
 	margin: 0;
-	margin-bottom: 5px;
-	padding: 9px 47px 9px 70px;
+	margin-bottom: 4px;
+	padding: 9px 47px 9px 73px;
 	border: 3px solid #ffffff;
 }
 
@@ -333,8 +333,8 @@ input[type="radio"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top: 10px;
-	left: 15px;	
+	top: 9px;
+	left: 13px;	
   
 	width: 19px;
 	height: 19px;
@@ -374,9 +374,11 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 21px;
 	
+	width: 121px;
+	box-sizing: border-box;
 	position: relative;
 	margin-bottom: auto;
-	padding: 12px 27px 12px 48px;
+	padding: 11px 27px 11px 48px;
 	margin-left: 68px;
 	
 	background-color: #ffffff;
@@ -533,6 +535,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
 	background-color: #32425c;
+	padding: 0 23px;
 	box-shadow: 0 5px 0 0 #293449;
 }
 
@@ -552,7 +555,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
 	margin: 0;
-	padding: 19px 33px;
+	padding: 19px 30px;
 }
 
 .site-navigation a,
@@ -622,13 +625,14 @@ input[type="radio"].visually-hidden {
 
 .service h2 {
 	margin: 0;
-	padding: 64px 0 30px 0;
+	padding: 65px 0 28px 0;
 }
 
 .service h3 {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
+	padding-top: 2px;
+	margin-bottom: 26px;
 	
 	font-size: 36px;
 	line-height: 36px;
@@ -644,11 +648,11 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.service p {
+.service-tagline {
 	margin: 0;
 	padding: 0;
 	width: 400px;
-	margin-bottom: 62px;
+	margin-bottom: 64px;
 }
 
 .service-column {
@@ -674,7 +678,7 @@ input[type="radio"].visually-hidden {
 	
 	width: 240px;
 	margin: 0;
-	padding: 16px 20px;
+	padding: 16px 22px;
 }
 
 .service-selection button:hover,
@@ -699,7 +703,7 @@ input[type="radio"].visually-hidden {
 .delivery p {
 	margin: 0;
 	padding: 0;
-	width: 280px;
+	width: 275px;
 }
 
 .delivery-column {
@@ -712,6 +716,7 @@ input[type="radio"].visually-hidden {
 .delivery-img {
 	margin: 0;
 	margin-left: auto;
+	margin-top: 28px;
 	padding: 0;
 	width: 468px;
 	height: 261px;
@@ -723,7 +728,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 85px 0;
+	padding-top: 80px;
+	padding-bottom: 85px;
 	position: relative;
 }
 
@@ -736,7 +742,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	width: 520px;
-	margin-top: 27px;
+	margin-top: 25px;
 }
 
 .company-technomart p:nth-of-type(2) {
@@ -748,14 +754,13 @@ input[type="radio"].visually-hidden {
 	line-height: 20px;
 	color: #000000;
 	list-style: none;
-	
 	margin: 0;
 	margin-top: 10px;
 	padding: 0;
 }
 
 .company li {
-	padding: 12px 0 12px 35px;
+	padding: 10px 0 10px 35px;
 	padding-left: 35px;
 	position: relative;
 }
@@ -1363,7 +1368,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 40px;
+	padding-bottom: 47px;
 }
 
 .top-footer .main-header-logo {
@@ -1455,7 +1460,7 @@ input[type="radio"].visually-hidden {
 .copyright {
 	margin: 0;
 	padding: 0;
-	width: 320px;
+	width: 280px;
 }
 
 .footer-social {
@@ -1533,7 +1538,7 @@ input[type="radio"].visually-hidden {
 
 .feedback:nth-of-type(2) {
 	width: 140px;
-	margin-right: 50px;
+	margin-right: 45px;
 }
 
 .feedback:nth-of-type(3) {
