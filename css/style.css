@@ -96,7 +96,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 10px 55px 8px 55px;
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 #b52933;	
+	box-shadow: 0 5px 0  0 #b52933;	
 }
 
 .main-header-logo:hover, 
@@ -107,13 +107,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo:active {
 	background-color: #ba2732; 
 }
-
-.search
-	::-webkit-input-placeholder {color:#ffffff;}
-	::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-	:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
-	:-ms-input-placeholder      {color:#ffffff;}
-
+  
 .search {
 	position: relative; 
 }
@@ -131,6 +125,21 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
+.search input[type="text"]::-webkit-input-placeholder {
+	color:#ffffff;
+}
+
+.search input[type="text"]::-moz-placeholder {
+	color:#ffffff;
+}          
+
+.search input[type="text"]:-moz-placeholder {
+	color:#ffffff;
+}
+           
+.search input[type="text"]:-ms-input-placeholder {
+	color:#ffffff;
+}
 
 .search::before {
 	content: "";
@@ -230,7 +239,7 @@ input[type="radio"].visually-hidden {
 
 .button-marker:active::before,
 .basket:active::before {
-	opacity: 0,5;
+	opacity: 0.5;
 }
 
 
@@ -524,7 +533,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
 	background-color: #32425c;
-	box-shadow: 0 5px 0 #293449;
+	box-shadow: 0 5px 0 0 #293449;
 }
 
 .site-navigation {
@@ -613,7 +622,7 @@ input[type="radio"].visually-hidden {
 
 .service h2 {
 	margin: 0;
-	padding: 67px 0 34px 0;
+	padding: 64px 0 30px 0;
 }
 
 .service h3 {
@@ -643,10 +652,9 @@ input[type="radio"].visually-hidden {
 }
 
 .service-column {
+	display: flex;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 102px;
-	display: flex;
 }
 
 .service-selection {
@@ -677,17 +685,15 @@ input[type="radio"].visually-hidden {
 .service-selection button:active {
 	color: #32425c;
 	
-	box-shadow: inset -7px 0 7px #cdcdcd;
+	box-shadow: inset -7px 0 7px 0 #cdcdcd;
 	background-color: #ffffff;
 }
 
 .delivery {
 	display: flex;
+	display: space-between;
 	margin-left: 80px;
-}
-
-.delivery-img {
-	margin-left: 135px;
+	width: 620px;
 }
 
 .delivery p {
@@ -697,8 +703,18 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-column {
+	position: absolute;
+	z-index: 10;
 	margin: 0;
 	padding: 0;
+}
+
+.delivery-img {
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+	width: 468px;
+	height: 261px;
 }
 
 .company {
@@ -961,7 +977,6 @@ input[type="radio"].visually-hidden {
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
-	font-weight: 700;
 	
 	margin: 0;
 	margin-bottom: 18px;
@@ -1114,8 +1129,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:nth-child(3n) {
 	margin-right: 0;
-	display: flex;
-	flex-direction: column;
 }
 
 .catalog-item:hover,
@@ -1245,6 +1258,7 @@ input[type="radio"].visually-hidden {
 	line-height: 20px;
 	color: #000000;
 	
+	min-height:40px;
 	width: 160px;
 	margin: 0 auto;
 	margin-bottom: 18px;
@@ -1255,6 +1269,8 @@ input[type="radio"].visually-hidden {
 	font-family: 'PT Sans', Arial, sans-serif;
 	color: #999999;
 	text-decoration: line-through;
+	
+	min-height:20px;
 	margin: 0 auto;
 	margin-bottom: 13px;
 }
@@ -1290,8 +1306,6 @@ input[type="radio"].visually-hidden {
     border: 19px solid white;
     border-left-color: #ee3643;
 }
-
-
 
 .pagination-list {
 	display: flex;
@@ -1368,7 +1382,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 35px;
 	padding: 16px 41px;
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 #b52933;
+	box-shadow: 0 5px 0 0 #b52933;
 }
 
 .contacts p {
@@ -1441,8 +1455,7 @@ input[type="radio"].visually-hidden {
 .copyright {
 	margin: 0;
 	padding: 0;
-	width: 230px;
-	margin-right: 160px;
+	width: 320px;
 }
 
 .footer-social {
@@ -1451,9 +1464,8 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	width: 133px;
 	margin: 0 auto;
-	margin-right: 118px;
 	padding: 0;
-	 
+	text-align: center;
 	list-style: none;
 }
 
@@ -1526,7 +1538,7 @@ input[type="radio"].visually-hidden {
 
 .feedback:nth-of-type(3) {
 	width: 100px;
-	margin-left: auto;
+	margin-right: 14px;
 }
 
 .feedback a {
@@ -1593,11 +1605,6 @@ input[type="radio"].visually-hidden {
 	border-top: 7px solid #ff5358;
 	background-color: #ffffff;
 	z-index: 40;
-}
-
-.write-us-form {
-	display: flex;
-	flex-direction: column;
 }
 
 .write-us-column {
