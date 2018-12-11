@@ -125,19 +125,19 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-.search input[type="text"]::-webkit-input-placeholder {
+.search input[type="search"]::-webkit-input-placeholder {
 	color:#ffffff;
 }
 
-.search input[type="text"]::-moz-placeholder {
+.search input[type="search"]::-moz-placeholder {
 	color:#ffffff;
 }          
 
-.search input[type="text"]:-moz-placeholder {
+.search input[type="search"]:-moz-placeholder {
 	color:#ffffff;
 }
            
-.search input[type="text"]:-ms-input-placeholder {
+.search input[type="search"]:-ms-input-placeholder {
 	color:#ffffff;
 }
 
@@ -663,7 +663,7 @@ input[type="radio"].visually-hidden {
 
 .service p,
 .company p {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -924,14 +924,14 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 }
 
 .breadcrumbs-current {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -977,7 +977,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -1103,7 +1103,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 2px;
 }
 .sorting {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -1278,7 +1278,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-category {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
@@ -1291,7 +1291,7 @@ input[type="radio"].visually-hidden {
 }
 
 .discount {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #999999;
 	text-decoration: line-through;
 	
@@ -1301,7 +1301,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #ffffff;
 	
 	position:  relative;
@@ -1336,7 +1336,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	list-style: none;
 }
 
@@ -1362,7 +1362,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info p {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -1655,7 +1655,7 @@ input[type="radio"].visually-hidden {
 .write-us-form input[type="text"],
 .write-us-form input[type="e-mail"],
 .write-us-form .text-letter {
-	font: font-family: 'PT Sans', Arial, sans-serif;
+	font: font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	
