@@ -1106,33 +1106,88 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-.delivery {
+.specific-service {
 	display: flex;
 	display: space-between;
 	margin-left: 80px;
 	width: 620px;
 }
 
-.delivery p {
+.specific-service p {
 	margin: 0;
 	padding: 0;
+}
+
+.delivery p {
 	width: 275px;
 }
 
-.delivery-column {
+.guarantee p {
+	width: 380px;
+} 
+
+.credit p {
+	width: 290px;
+}
+
+
+.specific-service-column {
 	position: absolute;
 	z-index: 10;
 	margin: 0;
 	padding: 0;
 }
 
-.delivery-img {
+.specific-service-img {
 	margin: 0;
 	margin-left: auto;
-	margin-top: 28px;
 	padding: 0;
+}
+
+.delivery-img {
+	margin-top: 26px;
 	width: 468px;
 	height: 261px;
+}
+
+.guarantee-img {
+	margin-top: 4px;
+	width: 389px; 
+	height: 283px;
+}
+
+.credit-img {
+	margin-top: 2px;
+	width: 465px; 
+	height: 285px;
+}
+
+.button-credit {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	
+	display: block;
+	box-sizing: border-box;
+	width: 195px;
+	margin: 0;
+	margin-top: 28px;
+	padding: 10px 0;
+	background-color: #ff5357;
+	border-radius: 2px;
+}
+
+.delivery {
+	display: block;
+}
+
+.guarantee {
+	display: none;
+}
+
+.credit {
+	display: none;
 }
 
 .company {
