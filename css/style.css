@@ -912,19 +912,20 @@ input[type="radio"].visually-hidden {
 .products {
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
 }
 
-.products-column {
+.popular-column {
 	margin: 0;
 	padding: 0 24px 0 30px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #f9f5f0;
 	vertical-align: middle; 
+	
+	text-transform: uppercase;
 }
 
-.products-column h2 {
+.popular-column h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
@@ -933,7 +934,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.products-column .button {
+.popular-column .button {
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -954,7 +955,8 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
-.container-catalog {
+.container-catalog,
+.container-manufacturers {
 	display: flex;
 	flex-wrap: wrap;
 	
@@ -979,6 +981,38 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 }
+
+.popular-manufacturers {
+	margin: 0;
+	margin-bottom: 65px;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.popular-manufacturers li {
+	margin: 20px 0;
+	margin-left: 20px;
+	padding: 0;
+	height: 143px;
+	width: 218px;
+	border: 1px solid #eaeaea;
+}
+
+.popular-manufacturers li:hover,
+.popular-manufacturers li:focus {
+	border: none;
+	width: 220px;
+	height: 145px;
+	
+	box-shadow: 0 0 15px 0 #293449;
+}
+
+.popular-manufacturers li:active {
+	opacity: 0.2;
+	box-shadow: 0 0 10px 0 #293449;
+}
+
 
 .service-wraper {
 	width: 100%;
