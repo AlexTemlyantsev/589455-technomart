@@ -1976,7 +1976,16 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.pagination-item-current {
+.pagination-item:hover,
+.pagination-item:focus {
+	border-color: #bdc6ca;
+}
+
+.pagination-item:active {
+	border-color: #ee3643;
+}
+
+.pagination-list .pagination-item-current {
 	margin: 0;
 	
 	background-color: #ee3643;
@@ -1984,7 +1993,7 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 }
 
-.pagination-item-next {
+.pagination-list .pagination-item-next {
 	box-sizing: border-box;
 	width: 140px;
 	
@@ -2235,14 +2244,20 @@ input[type="radio"].visually-hidden {
 
 /* modal */
 
+.modal {
+	position: fixed;
+}
+
 .modal-map-big {
 	display: none;
 	width: 940px;
 	height: 446px;
-	position: absolute; 
 	margin: 0 auto;
-    top: 33px;
-    left: 0;
+	margin-left: -470px;
+	margin-top: -223px;
+    
+	top: 50%;
+    left: 50%;
     z-index: 30;
 }
 
@@ -2274,12 +2289,13 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 	
 	display: none;
-	position:absolute;
-	top: 210px;
-	left: 160px;
+	top: 30%;
+	left: 50%;
 	
 	box-sizing: border-box;
 	width: 620px;
+	margin: 0;
+	margin-left: -310px;
 	border-top: 7px solid #ff5358;
 	background-color: #ffffff;
 	z-index: 40;
@@ -2349,6 +2365,7 @@ input[type="radio"].visually-hidden {
 	margin: 37px 80px;
 	padding: 10px 0;
 	width: 460px;
+	background-color: #ee3643;
 }
 
 .modal-add-product {
