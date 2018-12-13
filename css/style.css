@@ -1459,6 +1459,105 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 }
 
+.range-filter {
+	box-sizing: border-box;
+	width: 220px;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.range-controls {
+	position: relative;
+	
+	box-sizing: border-box;
+	width: 220px;
+	margin: 0;
+	margin-bottom: 9px;
+	padding: 39px 20px;
+	
+	background-color: #f7f3ec;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.range-controls .scale {
+	background-color: #d7dcde;
+	
+	min-height: 2px;
+}
+
+.range-controls .bar {
+	width: 80%;
+	min-height: 2px;
+
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	
+	width: 4px;
+	height: 4px;
+	padding: 0;
+    
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.price-controls {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.price-controls::before {
+	content: "";
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 10px;
+	height: 1px;
+	
+	background-color: #000000;
+	margin-left: -5px; 
+}
+
+.price-controls label {
+	box-sizing: border-box;
+	width: 95px;
+}
+
+.price-controls input {
+	box-sizing: border-box;
+	width: 95px;
+	padding: 10px;
+	margin: 0;
+	
+	font-size: 17px;
+	line-height: 18px;
+	text-align: center;
+	color: #283136;
+	
+	border: none;
+	border-radius: 2px;
+	background: #f7f3ec;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
 .filter ul {
 	font-size: 15px;
 	line-height: 20px;
