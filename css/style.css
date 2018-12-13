@@ -2320,7 +2320,7 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us-form input[type="text"],
-.write-us-form input[type="e-mail"],
+.write-us-form input[type="email"],
 .write-us-form .text-letter {
 	font-family : "PT Sans", Arial, sans-serif;
 	font-size: 13px;

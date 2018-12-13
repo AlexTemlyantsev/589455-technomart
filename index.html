@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -367,7 +368,7 @@
 			<div class="container">
 				<div class="bottom-footer">
 					<p class="copyright">
-						&copy 2010–2017 Компания «Техномарт»<br>
+						&copy; 2010–2017 Компания «Техномарт»<br>
 						Все права защищены
 					</p>
 					<ul class="footer-social">
@@ -408,32 +409,30 @@
 			Как до нас добраться
 		</h2>
 		<img src="img/map-big.jpg" width="940" height="446" alt="Изображение карты с адресом Техномарта: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" />
-		<a href="#close" class="close" alt="Кнопка: закрыть карту"><span class="visually-hidden">Закрыть карту</span></a>
+		<a href="#close" class="close"><span class="visually-hidden">Закрыть карту</span></a>
 	</div>
-				<section class="modal modal-write-us" id="modal-write-us">
-					<h2 class="visually-hidden">Напишите нам</h2>
-					
-					<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="write-us-column">
-							<p>
-								<label for="name-user">Ваше имя:</label>
-								<input class="name-user" id="name-user" type="text" name="name-user" placeholder="Имя Фамилия">
-							</p>
-							<p>
-								<label for="e-mail-user">Ваш e-mail:</label>
-								<input class="e-mail-user" id="e-mail-user" type="e-mail" name="e-mail-user" placeholder="email@example.com">
-							</p>
-						</div>
-						<p class="free-text">
-							<label for="text-letter">Текст письма:</label>
-							<textarea class="text-letter" id="text-letter" 	name="text-letter" placeholder="В свободной форме"></textarea>
-						</p>
-						<div class="button-wraper-write-us">
-							<button class="button" type="submit">Отправить</button>
-						</div>
-					</form>
-					
-					<a href="#close" class="modal-close"><span class="visually-hidden">Закрыть</span></a>
-				</section>
+	<section class="modal modal-write-us" id="modal-write-us">
+		<h2 class="visually-hidden">Напишите нам</h2>		
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="write-us-column">
+				<p>
+					<label for="name-user">Ваше имя:</label>
+					<input class="name-user" id="name-user" type="text" name="name-user" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="email-user">Ваш e-mail:</label>
+					<input class="email-user" id="email-user" type="email" name="email-user" placeholder="email@example.com">
+				</p>
+			</div>
+				<p class="free-text">
+					<label for="text-letter">Текст письма:</label>
+					<textarea class="text-letter" id="text-letter" 	name="text-letter" placeholder="В свободной форме"></textarea>
+				</p>
+			<div class="button-wraper-write-us">
+				<button class="button" type="submit">Отправить</button>
+			</div>
+		</form>		
+		<a href="#close" class="modal-close"><span class="visually-hidden">Закрыть</span></a>
+	</section>
   </body>
 </html>
