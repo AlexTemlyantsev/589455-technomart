@@ -13,26 +13,26 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  white-space: nowrap;
+	white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .button {
@@ -43,20 +43,22 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-/* для отметки флага в разметке нужно поставить <div class="flag flag-new"><span class=visually-hidden>Новинка</span></div> */
-
-.flag {
-    position:absolute;
-    top: -1px;
-    right: -1px;
-    width: 60px;
-    height: 60px;
-    text-indent: -1000px;
-    overflow: hidden;
-    z-index: 20;
-}
-.flag-new {
-    background: url("../img/new-flag.png") no-repeat 0 0;
+.flag-new::before {
+	content: "new";
+	
+	color: #ffffff;
+	text-align: center; 
+	
+    position: absolute;
+    top: 6px;
+    right: -22px;
+	
+    width: 83px;
+    height: 23px;
+	padding-top: 4px;
+	transform: rotate(45deg);
+    
+	background-color: #ee3643;
 }
 
 /* header */
@@ -881,13 +883,12 @@ input[type="radio"].visually-hidden {
 	content: "";
 	
 	position: absolute;
-	left: 50%;
+	left: 300px;
 	bottom: 36px;
 	
 	box-sizing: border-box;
 	width: 10px;
 	height: 10px;
-	margin-left: -15px;
 	
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
@@ -898,13 +899,12 @@ input[type="radio"].visually-hidden {
 	content: "";
 	
 	position: absolute;
-	left: 50%;
+	left: 320px;
 	bottom: 36px;
 	
 	box-sizing: border-box;
 	width: 10px;
 	height: 10px;
-	margin-left: 5px;
 	
 	background-color: #ee3643;
 	border: 2px solid #ffffff;
@@ -973,10 +973,14 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	text-align: center;
 	
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 	position: relative;
 	width: 218px;
 	margin: 20px 0;
 	margin-left: 20px;
+	min-height: 318px;
 	padding: 0;
 	border: 1px solid #e5e5e5;
 }
@@ -1513,21 +1517,6 @@ input[type="radio"].visually-hidden {
 .price-controls {
 	display: flex;
 	justify-content: space-between;
-	position: relative;
-}
-
-.price-controls::before {
-	content: "";
-	
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	
-	width: 10px;
-	height: 1px;
-	
-	background-color: #000000;
-	margin-left: -5px; 
 }
 
 .price-controls label {
@@ -1557,6 +1546,23 @@ input[type="radio"].visually-hidden {
 
 .range-controls .toggle-max {
 	left: 160px;
+}
+
+.min-price {
+	position: relative;
+}
+
+.min-price::after {
+	content: "";
+	
+	position: absolute;
+	top: 50%;
+	left: 105px;
+	
+	width: 10px;
+	height: 1px;
+	
+	background-color: #000000;
 }
 
 .filter ul {
@@ -1778,6 +1784,9 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	text-align: center;
 	
+	display: flex;
+	flex-direction: column; 
+	overflow: hidden;
 	position: relative;
 	width: 218px;
 	margin-bottom: 20px;
@@ -1924,14 +1933,11 @@ input[type="radio"].visually-hidden {
     width: 80px;
     margin: 0 auto;
 	margin-bottom: 20px;
+	margin-top: auto;
     padding: 10px 30px;
    
     background-color: #ee3643;
     border-radius: 3px;
-}
-
-.catalog-item:nth-child(3n) .catalog-item-price {
-	margin-top: auto;
 }
 
 .catalog-item-price::after {
@@ -2276,12 +2282,6 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/svg/icon-close.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-}
-
-.modal-map-big:target,
-.modal-write-us:target,
-.modal-add-product:target {
-	display: block;
 }
 
 .modal-write-us {
