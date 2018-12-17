@@ -2250,12 +2250,56 @@ input[type="radio"].visually-hidden {
 
 /* modal */
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
 .modal {
 	position: fixed;
+	display: none;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-map-big {
-	display: none;
 	width: 940px;
 	height: 446px;
 	margin: 0 auto;
@@ -2288,7 +2332,6 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 18px;
 	
-	display: none;
 	top: 30%;
 	left: 50%;
 	
@@ -2369,8 +2412,6 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-add-product {
-	display: none;
-	position: fixed;
 	top: 30%;
 	left: 50%;
 	margin-left: -310px;
