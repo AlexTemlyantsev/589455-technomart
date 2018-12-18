@@ -113,5 +113,29 @@ if (buyPopup != null) {
 	});
 }
 
-
-
+var slider = document.querySelector(".category-slider");	
+if (slider != null) {
+	var arrowClickRight = slider.querySelector(".arrow-right");
+	var arrowClickLeft = slider.querySelector(".arrow-left");
+	var dottedClickRight = slider.querySelector(".dotted-slide-right");
+	var dottedClickLeft = slider.querySelector(".dotted-slide-left");
+	var slideDrill = slider.querySelector(".slide-drill");
+	var slidePerforator = slider.querySelector(".slide-perforator");
+	
+	function sliderSelection(evt) {
+		evt.preventDefault();
+		slideDrill.classList.toggle("slide-show");
+		slideDrill.classList.toggle("slide-hidden");
+		slidePerforator.classList.toggle("slide-hidden");
+		slidePerforator.classList.toggle("slide-show");
+		dottedClickRight.classList.toggle("dotted-slide-white");
+		dottedClickRight.classList.toggle("dotted-slide-red");
+		dottedClickLeft.classList.toggle("dotted-slide-red");
+		dottedClickLeft.classList.toggle("dotted-slide-white");
+	}
+	
+	arrowClickRight.addEventListener("click", sliderSelection);
+	arrowClickLeft.addEventListener("click", sliderSelection);	
+	dottedClickRight.addEventListener("click", sliderSelection);
+	dottedClickLeft.addEventListener("click", sliderSelection);
+}

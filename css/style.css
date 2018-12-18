@@ -792,23 +792,29 @@ input[type="radio"].visually-hidden {
 	width: 620px;
 	margin: 0;
 	padding: 0;
-	height: 266px; /*фиксированная высота из-за картинки */
-	
 	color: #ffffff;
 }
 
-.category-slider {
+.slide-show {
+	display: block;
+	
+	height: 266px; /*фиксированная высота из-за картинки */
+}
+
+.slide-hidden {
+	display: none;
+}
+
+.slide-drill {
 	background-image: url("../img/drill.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
-.slider-content .slide:nth-of-type(1) {
-	display: block;
-}
-
-.slider-content .slide:nth-of-type(2) {
-	display: none;
+.slide-perforator {
+	background-image: url("../img/perforator.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .slider-content h3 {
@@ -900,7 +906,7 @@ input[type="radio"].visually-hidden {
 	width: 10px;
 	height: 10px;
 	
-	background-color: #ffffff;
+	
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 }
@@ -916,9 +922,16 @@ input[type="radio"].visually-hidden {
 	width: 10px;
 	height: 10px;
 	
-	background-color: #ee3643;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
+}
+
+.category-slider .dotted-slide-red::before {
+	background-color: #ee3643;
+}
+
+.category-slider .dotted-slide-white::before {
+	background-color: #ffffff;
 }
 
 .products {
