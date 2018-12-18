@@ -1137,7 +1137,20 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
+.service-selection .active-button, 
+.service-selection .active-button:hover, 
+.service-selection .active-button:focus {
+	color: #32425c;
+	
+	box-shadow: inset -7px 0 7px 0 #cdcdcd;
+	background-color: #ffffff;
+}
+
 .specific-service {
+	display: none;
+}
+
+.service-show {
 	display: flex;
 	display: space-between;
 	margin-left: 80px;
@@ -1207,18 +1220,6 @@ input[type="radio"].visually-hidden {
 	padding: 10px 0;
 	background-color: #ff5357;
 	border-radius: 2px;
-}
-
-.delivery {
-	display: block;
-}
-
-.guarantee {
-	display: none;
-}
-
-.credit {
-	display: none;
 }
 
 .company {

@@ -139,3 +139,49 @@ if (slider != null) {
 	dottedClickRight.addEventListener("click", sliderSelection);
 	dottedClickLeft.addEventListener("click", sliderSelection);
 }
+
+var service = document.querySelector(".service");
+if (service != null) {
+	var delivery = service.querySelector(".delivery");
+	var guarantee = service.querySelector(".guarantee");
+	var credit = service.querySelector(".credit");
+	var buttonDelivery = service.querySelector(".button-delivery");
+	var buttonGuarantee = service.querySelector(".button-guarantee");
+	var buttonCredit = service.querySelector(".button-credit");
+	
+	buttonDelivery.addEventListener("click", function (evt) {
+		if (delivery.classList.contains("modal-show") != null)
+		
+		delivery.classList.add("service-show");
+		buttonDelivery.classList.add("active-button");
+		
+		guarantee.classList.remove("service-show");
+		credit.classList.remove("service-show");
+		buttonGuarantee.classList.remove("active-button");
+		buttonCredit.classList.remove("active-button");
+	});
+	
+	buttonGuarantee.addEventListener("click", function (evt) {
+		if (guarantee.classList.contains("modal-show") != null)
+		
+		guarantee.classList.add("service-show");
+		buttonGuarantee.classList.add("active-button");
+		
+		delivery.classList.remove("service-show");
+		credit.classList.remove("service-show");
+		buttonDelivery.classList.remove("active-button");
+		buttonCredit.classList.remove("active-button");
+	});
+	
+	buttonCredit.addEventListener("click", function (evt) {
+		if (credit.classList.contains("modal-show") != null)
+		
+		credit.classList.add("service-show");
+		buttonCredit.classList.add("active-button");
+		
+		guarantee.classList.remove("service-show");
+		delivery.classList.remove("service-show");
+		buttonGuarantee.classList.remove("active-button");
+		buttonDelivery.classList.remove("active-button");
+	});
+}
