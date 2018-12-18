@@ -441,33 +441,43 @@ input[type="radio"].visually-hidden {
 	margin-left: 50px;
 }
 
-.button-exit {
+.profile-column {
 	margin: 0;
-	padding: 0;
+	margin-bottom: 7px;
+	padding: 11px 0 13px 0;
+	width: 300px;
+	box-sizing: border-box;
+	
+	vertical-align: top;
+	background-color: #ffffff;
 }
 
-.button-exit a {
+.profile-column a {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	
-	background-color: #ffffff;
-	
-	position: relative;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 300px;
-	vertical-align: top;
-	margin: 0;
-	margin-bottom: 7px;
-	padding: 11px 60px 13px 50px;
 }
 
-.button-exit a::before {
+.profile-column .profile {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+}
+
+.profile-column .exit {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 50px;
+}
+
+
+.profile-column .profile::before {
 	content: "";
 
 	position: absolute;
-	top: 13px;
+	top: 2px;
 	left: 13px;	
   
 	width: 21px;
@@ -478,11 +488,11 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-.button-exit a::after {
+.profile-column .exit::after {
 	content: "";
 
 	position: absolute;
-	top: 14px;
+	top: 2px;
 	right: 10px;	
   
 	width: 21px;
@@ -493,30 +503,30 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-.button-exit:hover a::before,
-.button-exit:focus a::before {
+.profile-column .profile:hover::before,
+.profile-column .profile:focus::before {
 	background-image: url("../img/svg/icon-user-dark-blue.svg");
 }
 
-.button-exit:hover a::after,
-.button-exit:focus a::after {
+.profile-column .exit:hover::after,
+.profile-column .exit:focus::after {
 	background-image: url("../img/svg/icon-logout-dark-blue.svg");
 }
 
-.button-exit:active a::before {
+.profile-column .profile:active::before {
 	background-image: url("../img/svg/icon-user.svg");
 }
 
-.button-exit:active a::after {
+.profile-column .exit:active::after {
 	background-image: url("../img/svg/icon-logout.svg");
 }
 
-.button-exit a:hover,
-.button-exit a:focus {
+.profile-column .profile:hover,
+.profile-column .profile:focus {
 	color: #000000;
 }
 
-.button-exit a:active {
+.profile-column .profile:active {
 	opacity: 0.3;
 }
 
@@ -2311,6 +2321,22 @@ input[type="radio"].visually-hidden {
     z-index: 30;
 }
 
+.modal-map-big p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	margin: 0;
+}
+
+.modal-map-big iframe {
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
 .modal-map-big .close::before,
 .modal-write-us .modal-close::before,
 .modal-add-product .modal-close::before {
@@ -2319,6 +2345,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 9px;
 	right: 9px;
+	z-index: 30;
 	
 	width: 21px;
 	height: 21px;
