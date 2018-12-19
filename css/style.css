@@ -314,7 +314,7 @@ input[type="radio"].visually-hidden {
 .header-row {
 	display: flex;
 	justify-content: space-between; 
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 }
 
 .header-caption {
@@ -464,7 +464,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 50px;
+	padding-left: 48px;
 }
 
 .profile-column .exit {
@@ -473,7 +473,6 @@ input[type="radio"].visually-hidden {
 	vertical-align: top;
 	padding-right: 50px;
 }
-
 
 .profile-column .profile::before {
 	content: "";
@@ -495,7 +494,7 @@ input[type="radio"].visually-hidden {
 
 	position: absolute;
 	top: 2px;
-	right: 10px;	
+	right: 0px;	
   
 	width: 21px;
 	height: 17px;
@@ -959,7 +958,6 @@ input[type="radio"].visually-hidden {
 
 .manufacturers .popular-column {
 	padding-left: 26px;
-	margin-bottom: -1px;
 }
 
 .popular-column h2 {
@@ -1012,7 +1010,6 @@ input[type="radio"].visually-hidden {
 	width: 218px;
 	margin: 20px 0;
 	margin-left: 20px;
-	min-height: 318px;
 	padding: 0;
 	border: 1px solid #e5e5e5;
 }
@@ -1256,7 +1253,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding-top: 80px;
-	padding-bottom: 85px;
+	padding-bottom: 87px;
 	position: relative;
 }
 
@@ -1282,7 +1279,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 	list-style: none;
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 11px;
 	padding: 0;
 }
 
@@ -1318,7 +1315,7 @@ input[type="radio"].visually-hidden {
 .button-company {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 27px;
+	margin-top: 29px;
 	padding: 10px 40px;
 }
 
@@ -1366,7 +1363,7 @@ input[type="radio"].visually-hidden {
 /* main Каталог */
 
 .breadcrumbs {
-	margin: 20px 0;
+	margin: 21px 0 20px 0;
 	padding: 0;
 	display: flex;
 	justify-content: flex-start;
@@ -1399,7 +1396,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	
 	position: absolute;
-	left: 0px;
+	left: -1px;
 	top: 3px;
 	
 	width: 15px;
@@ -1490,14 +1487,16 @@ input[type="radio"].visually-hidden {
 .filter fieldset {
 	border: none;
 	border-bottom: 1px solid #e5e5e5;
-  
 	margin: 0;
-	margin-top: 22px;
 	padding: 0;
 }
 
 .filter fieldset:nth-of-type(1) {
 	margin: 0;
+}
+
+.filter fieldset:nth-of-type(2) {
+	margin-top: 16px;
 }
 
 .filter fieldset:nth-of-type(3) {
@@ -1578,7 +1577,7 @@ input[type="radio"].visually-hidden {
 .price-controls input {
 	box-sizing: border-box;
 	width: 95px;
-	padding: 7px;
+	padding: 10px;
 	margin: 0;
 	
 	font-size: 17px;
@@ -1705,7 +1704,7 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 	
 	margin: 0;
-	margin-top: 54px;
+	margin-top: 58px;
 	padding: 9px 38px;
 	border: 1px solid #e5e5e5;
 	border-radius: 2px;
@@ -1719,7 +1718,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	margin:0;
 	margin-bottom: 21px;
-	padding: 10px 16px;
+	padding: 10px 16px 8px 16px;
 	box-sizing: border-box;
 	width: 700px;
 	background-color: #f7f3ec;
@@ -1741,7 +1740,6 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 	
 	margin: 0;
-	padding: 0;
 	border-bottom: 1px dotted #ee3643; 
 }
 
@@ -1971,9 +1969,8 @@ input[type="radio"].visually-hidden {
 	color: #999999;
 	text-decoration: line-through;
 	
-
 	margin: 0 auto;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 .catalog-item-price {
@@ -2065,7 +2062,7 @@ input[type="radio"].visually-hidden {
 
 .info {
 	margin: 0;
-	padding: 66px 0 68px 0;
+	padding: 66px 0 66px 0;
 }
 
 .info h2 {
@@ -2107,7 +2104,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 50px;
+	padding-bottom: 51px;
 }
 
 .top-footer .main-header-logo {
@@ -2115,8 +2112,6 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #ffffff;
-	
-	
 	
 	display: inline-block;
 	vertical-align: top;
@@ -2156,14 +2151,14 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
-.footer-site-navigation {
+.footer-navigation .footer-site-navigation {
 	width: 547px;
+	margin-left: 3px;
 }
 
 .footer-navigation .products-navigation {
 	width: 525px;
 	margin-left: 25px;
-	
 }
 
 .products-navigation a {
