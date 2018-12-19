@@ -2507,15 +2507,16 @@ input[type="radio"].visually-hidden {
 	margin-left: -310px;
 	z-index: 50;
 	
+	box-sizing: border-box;
 	width: 620px;
 	border-top: 7px solid #ee3643;
 	background-color: #ffffff;
 }
 
 .modal-add-product h2 {
-	margin: 65px 0 65px 80px;
+	margin: 47px 0 68px 80px;
 	padding: 0;
-	padding-left: 95px;
+	padding-left: 98px;
 	position: relative;
 	
 	font-size: 30px;
@@ -2547,8 +2548,14 @@ input[type="radio"].visually-hidden {
 	margin: 0 80px;
 }
 
+.modal-add-product .order-column {
+	display: flex;
+	justify-content: space-between;
+}
+
 .order-column .button {
-	display: block;
+	box-sizing: border-box;
+	width: 220px;
 	margin: 37px 0;
 	border-radius: 2px;
 	
