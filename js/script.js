@@ -133,11 +133,25 @@ if (slider != null) {
 		dottedClickLeft.classList.toggle("dotted-slide-red");
 		dottedClickLeft.classList.toggle("dotted-slide-white");
 	}
-	
+
 	arrowClickRight.addEventListener("click", sliderSelection);
 	arrowClickLeft.addEventListener("click", sliderSelection);	
-	dottedClickRight.addEventListener("click", sliderSelection);
-	dottedClickLeft.addEventListener("click", sliderSelection);
+	
+	dottedClickRight.addEventListener("click", function (evt) {
+		if (dottedClickRight.classList.contains("dotted-slide-white")) {
+			sliderSelection(evt);
+		} else {
+				evt.preventDefault();
+		}
+	});
+	
+	dottedClickLeft.addEventListener("click", function (evt) {
+		if (dottedClickLeft.classList.contains("dotted-slide-white")) {
+			sliderSelection(evt);
+		} else {
+				evt.preventDefault();
+		}
+	});
 }
 
 var service = document.querySelector(".service");
@@ -150,38 +164,38 @@ if (service != null) {
 	var buttonCredit = service.querySelector(".button-credit");
 	
 	buttonDelivery.addEventListener("click", function (evt) {
-		if (delivery.classList.contains("modal-show") != null)
-		
-		delivery.classList.add("service-show");
-		buttonDelivery.classList.add("active-button");
-		
-		guarantee.classList.remove("service-show");
-		credit.classList.remove("service-show");
-		buttonGuarantee.classList.remove("active-button");
-		buttonCredit.classList.remove("active-button");
+		if (delivery.classList.contains("modal-show") != null) {
+			delivery.classList.add("service-show");
+			buttonDelivery.classList.add("active-button");
+			
+			guarantee.classList.remove("service-show");
+			credit.classList.remove("service-show");
+			buttonGuarantee.classList.remove("active-button");
+			buttonCredit.classList.remove("active-button");
+		}
 	});
 	
 	buttonGuarantee.addEventListener("click", function (evt) {
-		if (guarantee.classList.contains("modal-show") != null)
-		
-		guarantee.classList.add("service-show");
-		buttonGuarantee.classList.add("active-button");
-		
-		delivery.classList.remove("service-show");
-		credit.classList.remove("service-show");
-		buttonDelivery.classList.remove("active-button");
-		buttonCredit.classList.remove("active-button");
+		if (guarantee.classList.contains("modal-show") != null) {
+			guarantee.classList.add("service-show");
+			buttonGuarantee.classList.add("active-button");
+			
+			delivery.classList.remove("service-show");
+			credit.classList.remove("service-show");
+			buttonDelivery.classList.remove("active-button");
+			buttonCredit.classList.remove("active-button");
+		}
 	});
 	
 	buttonCredit.addEventListener("click", function (evt) {
-		if (credit.classList.contains("modal-show") != null)
-		
-		credit.classList.add("service-show");
-		buttonCredit.classList.add("active-button");
-		
-		guarantee.classList.remove("service-show");
-		delivery.classList.remove("service-show");
-		buttonGuarantee.classList.remove("active-button");
-		buttonDelivery.classList.remove("active-button");
+		if (credit.classList.contains("modal-show") != null) {
+			credit.classList.add("service-show");
+			buttonCredit.classList.add("active-button");
+			
+			guarantee.classList.remove("service-show");
+			delivery.classList.remove("service-show");
+			buttonGuarantee.classList.remove("active-button");
+			buttonDelivery.classList.remove("active-button");
+		}
 	});
 }
