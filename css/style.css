@@ -844,13 +844,15 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/drill.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
+	background-color: #a59e98;
 }
 
 .slide-perforator {
 	background-image: url("../img/perforator.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
-}
+	background-color: #a59e98;
+} 
 
 .category-item .slide-show {
 	border: 1px solid transparent;
@@ -1898,7 +1900,7 @@ input[type="radio"].visually-hidden {
 	border-right-width: 5px;
 	border-right-color: transparent;
 	border-left-width: 5px;
-	border-left-color: transparent;; 
+	border-left-color: transparent; 
 }
 
 .sort-up::before,
