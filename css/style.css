@@ -1173,6 +1173,7 @@ input[type="radio"].visually-hidden {
 .service-selection {
 	position: relative;
 	margin: 0;
+	margin-bottom: 102px;
 	padding: 0;
 	
 	list-style: none;
@@ -1240,6 +1241,8 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 	margin-left: 80px;
 	width: 620px;
+	
+	position: relative;
 }
 
 .specific-service p {
@@ -1253,7 +1256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .guarantee p {
-	width: 380px;
+	width: 378px;
 } 
 
 .credit p {
@@ -1261,36 +1264,50 @@ input[type="radio"].visually-hidden {
 }
 
 .specific-service-column {
-	position: absolute;
+	position: relative;
 	z-index: 10;
 	margin: 0;
 	padding: 0;
 }
 
-.specific-service-img {
-	margin: 0;
-	margin-left: auto;
-	padding: 0;
+.service-show::after {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-color: #f4f8f9;
 }
 
-.delivery-img {
-	margin-top: 26px;
+.service-column .delivery::after {
+	top: 26px;
+	right: 0;
+	
 	width: 468px;
 	height: 261px;
+	
+	background-image: url("../img/delivery.png"); 
 }
 
-.guarantee-img {
-	margin-top: 4px;
-	margin-right: -8px;
-	width: 389px; 
+.service-column .guarantee::after {
+	top: 4px;
+	right: -8px;
+	
+	width: 389px;
 	height: 283px;
+	
+	background-image: url("../img/guarantee.png"); 
 }
 
-.credit-img {
-	margin-top: 2px;
-	margin-right: -10px;
+.service-column .credit::after {
+	top: 2px;
+	right: -10px;
+	
 	width: 465px; 
 	height: 285px;
+	
+	background-image: url("../img/credit.png"); 
 }
 
 .request-credit {
@@ -1390,7 +1407,8 @@ input[type="radio"].visually-hidden {
 }
 
 .company-contacts {
-	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .company-contacts h2  {
@@ -1424,11 +1442,8 @@ input[type="radio"].visually-hidden {
 	        box-sizing: border-box;
 	
 	margin: 0;
+	margin-top: auto;
 	padding: 10px 60px;
-	margin-top: 40px;
-	
-	position: absolute;
-	bottom: 0;
 }
 
 /* main Каталог */
@@ -2323,8 +2338,9 @@ input[type="radio"].visually-hidden {
 
 .copyright {
 	margin: 0;
+	margin-right: 43px;
 	padding: 0;
-	width: 273px;
+	width: 230px;
 }
 
 .footer-social {
