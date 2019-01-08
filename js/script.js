@@ -53,7 +53,7 @@ if (popupLetter != null) {
 		}
     }
 });
-}
+} 
 
 var mapLink = document.querySelector(".map-big");
 var mapPopup = document.querySelector(".modal-map-big");
@@ -71,8 +71,8 @@ if (mapPopup != null) {
 	});
 
 	window.addEventListener("keydown", function (evt) {
-		evt.preventDefault();
 		if (evt.keyCode === 27) {
+			evt.preventDefault();
 			if (mapPopup.classList.contains("modal-show")) {
 				mapPopup.classList.remove("modal-show");
 			}
@@ -104,8 +104,8 @@ if (buyPopup != null) {
 	});
 
 	window.addEventListener("keydown", function (evt) {
-		evt.preventDefault();
 		if (evt.keyCode === 27) {
+			evt.preventDefault();
 			if (buyPopup.classList.contains("modal-show")) {
 				buyPopup.classList.remove("modal-show");
 			}
