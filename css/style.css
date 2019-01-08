@@ -555,7 +555,8 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	width: 300px;
@@ -1090,7 +1091,8 @@ input[type="radio"].visually-hidden {
 	margin-left: 20px;
 	padding: 0;
 	height: 145px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 220px;
 	border: 1px solid #eaeaea;
 }
@@ -1402,8 +1404,13 @@ input[type="radio"].visually-hidden {
 }
 
 .company-contacts {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .company-contacts h2  {
